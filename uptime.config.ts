@@ -7,11 +7,11 @@ import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
   // Title for your status page
-  title: "AcoFork 的状态页",
+  title: "Kentの状态页",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/afoim', label: 'GitHub' },
-    { link: 'https://blog.acofork.com/', label: '博客' },
+    { link: 'https://github.com/xxytan', label: 'GitHub' },
+    { link: 'https://b.oxue.de', label: '博客' },
   ],
 }
 
@@ -65,20 +65,20 @@ const workerConfig: WorkerConfig = {
     },
     {
       id: 'blog',
-      name: '博客总入口（自动分流）',
+      name: '博客',
       method: 'HEAD',
-      target: 'https://blog.acofork.com/',
-      statusPageLink: 'https://blog.acofork.com/',
+      target: 'https://b.oxue.xe/',
+      statusPageLink: 'https://b.oxue.de/',
       hideLatencyChart: false,
       expectedCodes: [200],
       timeout: 10000,
     },
     {
       id: 'blog_eo',
-      name: '博客（EdgeOne Pages国内节点）',
+      name: '博客（GH&EO)',
       method: 'HEAD',
-      target: 'https://eo-blog.acofork.com/',
-      statusPageLink: 'https://eo-blog.acofork.com/',
+      target: 'https://koe.qzz.io/',
+      statusPageLink: 'https://b.oxue.de/',
       hideLatencyChart: false,
       expectedCodes: [200],
       timeout: 10000,
